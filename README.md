@@ -1,36 +1,79 @@
-# Final Project Template
+##Cars Dealership Full-Stack Application##
 
-The final project for this course has several steps that you must complete. 
-To give you an overview of the whole project, all the high-level steps are listed below. 
-The project is then divided into several smaller labs that give the detailed instructions for each step. 
-You must complete all the labs to successfully complete the project.
+Project Overview
+This project is a full-stack web application developed as part of the IBM Full-Stack Cloud Application Development Capstone.
 
-## Project Breakdown
+The application represents a national Cars Dealership platform in the United States. It allows users to browse dealership branches, view dealer details, read customer reviews, and submit new reviews after logging in. Sentiment analysis is applied to customer reviews using natural language processing services.
 
-**Prework: Sign up for IBM Cloud account and create a Watson Natural language Understanding service**
-1. Create an IBM cloud account if you don't have one already.
-2. Create an instance of the Natural Language Understanding (NLU) service.
+##Features##
+1.View a list of car dealerships
+2.Filter dealerships by state
+3.View dealer details and customer reviews
+4.User registration, login, and logout
+5.Submit new reviews for dealerships (authenticated users)
+6.Sentiment analysis on submitted reviews
+7.Admin management of car makes and models
+8.Continuous Integration and Continuous Deployment (CI/CD)
+9.Containerized deployment using Docker
 
-**Fork the project Github repository with a project then build and deploy the template project**
-1. Fork the repository in your account
-2. Clone the repository in the theia lab environment
-3. Create static pages to finish the user stories
-4. Deploy the application on IBM Cloud
+##Technology Stack##
+Frontend
+-React
+-HTML5
+-CSS3
+-JavaScript
 
-**Add user management to the application**
-1. Implement user management using the Django user authentication system.
-2. Set up continuous integration and delivery
+##Backend##
+-Django (Python)
+-Node.js
+-Express
+-MongoDB
+-SQLite
 
-**Implement backend services**
-1. Create cloud functions to manage dealers and reviews
-2. Create Django models and views to manage car model and car make
-3. Create Django proxy services and views to integrate dealers, reviews, and cars together
- 
-**Add dynamic pages with Django templates**
-1. Create a page that shows all the dealers
-2. Create a page that show reviews for a selected dealer
-3. Create a page that let's the end user add a review for a selected dealer
+##Cloud & DevOps##
+-Docker
+-Kubernetes
+-GitHub Actions (CI/CD)
+-IBM Cloud Code Engine
+-IBM Cloud services for deployment and NLP
 
-**Containerize your application**
-1. Add deployment artifacts to your application
-2. Deploy your application
+##Application Architecture##
+
+The application follows a microservices architecture:
+-Django handles user authentication, dynamic pages, and proxy services
+-Node.js and Express manage dealership and review APIs
+-MongoDB stores dealer and review data
+-Django models manage car makes and car models
+-Sentiment analysis service processes review text
+
+##Functional Highlights##
+-Static pages: About Us and Contact Us
+-Dynamic dealer listing and filtering
+-Review submission workflow
+-Admin interface for managing car data
+-Automated build and deployment pipeline
+
+##CI/CD Pipeline##
+
+The project includes a GitHub Actions workflow that:
+-Builds the application
+-Runs required checks
+-Builds Docker images
+-Deploys the application to IBM Cloud
+
+##How to Run the Application (Development)##
+
+Clone the repository
+-Set up the Python virtual environment
+-Install backend dependencies
+-Start the Django server
+-Start the Node.js services
+-Access the application via browser
+
+Author
+Mak
+IBM Full-Stack Cloud Application Development Capstone
+GitHub: https://github.com/RanMacSG
+
+License
+This project is licensed under the Apache 2.0 License.
